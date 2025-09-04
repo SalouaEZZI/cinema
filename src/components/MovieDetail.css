@@ -1,0 +1,96 @@
+/* --------- GLOBAL CONTAINER --------- */
+.movie-detail-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px;
+  background: linear-gradient(to bottom, #1e1e1e, #2c2c2c);
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --------- Titre du film --------- */
+.movie-detail-container h2 {
+  font-size: 2.8rem;
+  color: #e1e1e1;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* --------- Affiche --------- */
+.movie-detail-container img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.movie-detail-container img:hover {
+  transform: scale(1.03);
+}
+
+/* --------- Description --------- */
+.movie-description {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 40px;
+  padding: 0 20px;
+  color: #ccc;
+}
+
+/* --------- Bande-annonce --------- */
+.trailer-container {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.trailer-container iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 12px;
+  border: 2px solid #444;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+/* --------- Bouton retour --------- */
+.back-link {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #e50914;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+  background-color: #b00610;
+}
+
+/* --------- Responsive --------- */
+@media (max-width: 768px) {
+  .movie-detail-container {
+    padding: 20px;
+  }
+
+  .movie-description {
+    padding: 0 10px;
+    font-size: 1rem;
+  }
+
+  .trailer-container iframe {
+    height: 250px;
+  }
+
+  .movie-detail-container h2 {
+    font-size: 2rem;
+  }
+}
